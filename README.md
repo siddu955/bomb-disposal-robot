@@ -62,21 +62,7 @@ An **ESP32-CAM** is mounted behind the robotic arm to provide a live camera feed
 
 The robot uses a **12 V, 7 Ah lead-acid battery** as its main power source.
 
-The power system uses separate buck converters:
 
-```text
-12 V 7 Ah Lead-Acid Battery
-             │
-             ├──► BTS Motor Drivers ──► 4 × 12 V Motors
-             │
-             ├──► 6 V Buck Converter ──► 6 × MG Servos
-             │
-             └──► 5 V Buck Converter ──► ESP32-CAM
-```
-
-Separating the servo and camera power supplies helps provide appropriate operating voltages for the different subsystems.
-
----
 
 ## 📱 Android Control System
 
@@ -94,6 +80,12 @@ The same application provides control of:
 This allows the operator to control the mobile platform and robotic arm from a single interface.
 
 ---
+
+## 📱 Android Controller App
+
+The custom Android application is used to control the robot base and robotic arm via Bluetooth.
+
+**[⬇️ Download Android App (APK)](../../releases/latest)**
 
 
 ## 🛡️ Obstacle Detection
